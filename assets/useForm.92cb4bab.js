@@ -1,1 +1,0 @@
-import{r as u}from"./index.4dffe51d.js";const Z=(e={})=>{const[t,a]=u.exports.useState(e),n=new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])*$/);return{...t,formState:t,onInputChange:({target:o})=>{const{value:r,name:s}=o;a({...t,[s]:r})},regex:n}};export{Z as u};
