@@ -33,7 +33,7 @@ export const EditFoodItem = ({ food, setOnEditMenu }: Props) => {
     }
 
     dispatch(startUpdatingMenuItem(menuItem));
-    setOnEditMenu(false)
+   
   }
 
   const onCloseForm = (e: any) => {
@@ -82,7 +82,7 @@ export const EditFoodItem = ({ food, setOnEditMenu }: Props) => {
               <button className='bg-red-500 py-2  px-6 rounded-lg shadow-lg w-full' onClick={onCloseForm}>
                 Close </button>
 
-              <button type='submit' className='bg-green-500 py-2 px-4 rounded-lg shadow-lg w-full'>
+              <button type='submit' className='bg-green-500 py-2 px-4 rounded-lg shadow-lg w-full' onClick={ setOnEditMenu(false)}>
                 Save</button>
             </div>
           </div>

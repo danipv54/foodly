@@ -43,7 +43,7 @@ export const AuthSlice = createSlice({
             state.user = {}
             state.session = {}
 
-            location.reload();
+
             localStorage.removeItem('user');
             localStorage.removeItem('session');
             localStorage.removeItem('sb-nzagubnofhnwizvxisfh-auth-token');

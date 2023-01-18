@@ -10,7 +10,7 @@ export const startGettingMenu = () => {
             .select("food,id");
 
         if (error) {
-            console.log(error.message)
+           
             return;
         }
 
@@ -27,7 +27,7 @@ export const startGettingMenu = () => {
 
 export const startUpdatingMenuItem = (item: any) => {
 
-    console.log(item);
+
 
     return async (dispatch: any) => {
         const { error } = await supabase
@@ -41,7 +41,7 @@ export const startUpdatingMenuItem = (item: any) => {
             .select("*");
 
         if (error) {
-            console.log(error.message);
+           
             return;
         }
 

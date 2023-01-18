@@ -11,7 +11,6 @@ export const startingGetAllOrders = () => {
 
 
         if (error) {
-            console.log(error.message);
             return;
         }
 
@@ -42,7 +41,7 @@ export const updatingOrder = (order: any) => {
 
 
         if (error) {
-            console.log(error.message);
+         
             return;
         };
 
