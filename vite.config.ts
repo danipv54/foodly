@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     cors:true,
     proxy:{
-      'foodly': ' https://github.com/danipv54/foodly/gh-pages/assets/'
+      'foodly': ' https://github.com/danipv54/foodly/blob/gh-pages/assets'
     }
   }
   
