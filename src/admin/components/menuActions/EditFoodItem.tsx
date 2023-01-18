@@ -31,8 +31,8 @@ export const EditFoodItem = ({ food, setOnEditMenu }: Props) => {
       price: itemPrice,
       imgFood: itemImg
     }
-    setOnEditMenu(false)
     dispatch(startUpdatingMenuItem(menuItem));
+    setOnEditMenu(false);
    
   }
 
