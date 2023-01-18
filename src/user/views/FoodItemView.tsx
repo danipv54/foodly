@@ -31,7 +31,7 @@ export const FoodItem = () => {
       >
 
         <div className='lg:w-3/5 rounded-2xl bg-slate-100'>
-          <img className=' rounded-lg shadow-lg sm:w-11/12' src={`${item.imgFood}`} alt={item.name} />
+          <img className=' rounded-lg shadow-lg sm:w-11/12' src={`${item?.imgFood}`} alt={item.name} />
         </div>
 
         <div className='flex flex-col justify-center sm:pl-8 sm:mt-8 space-y-4'>

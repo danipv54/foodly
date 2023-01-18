@@ -10,7 +10,8 @@ export const OrderState = ({ foodId, orders, openModal }: any) => {
 
     const updateorder = (order: IFOOD) => {
 
-        dispatch(updatingOrder(order))
+        dispatch(updatingOrder(order));
+        openModal(false)
     }
 
     return (
