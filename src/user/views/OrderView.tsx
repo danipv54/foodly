@@ -1,9 +1,15 @@
-import { useAppSelector } from '../../store';
+import { useEffect } from 'react';
+import { useAppDispatch, useAppSelector } from '../../store';
+import { startFetchingOrder } from '../../store/shared';
 import { OrderCard } from '../components';
 import { IFOOD } from '../interface/IFood';
 
 export const OrderView = () => {
+    const dispatch = useAppDispatch();
     let { orders } = useAppSelector(state => state.order);
+    useEffect(() => {
+        dispatch(startFetchingOrder())
+      }, [])
 
     return (
         <div className='w-fit'>
