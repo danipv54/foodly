@@ -31,7 +31,7 @@ export const EditFoodItem = ({ food, setOnEditMenu }: Props) => {
       price: itemPrice,
       imgFood: itemImg
     }
-
+    setOnEditMenu(false)
     dispatch(startUpdatingMenuItem(menuItem));
    
   }
@@ -82,7 +82,7 @@ export const EditFoodItem = ({ food, setOnEditMenu }: Props) => {
               <button className='bg-red-500 py-2  px-6 rounded-lg shadow-lg w-full' onClick={onCloseForm}>
                 Close </button>
 
-              <button  onClick={()=>setOnEditMenu(false)} className='bg-green-500 py-2 px-4 rounded-lg shadow-lg w-full' >
+              <button type='submit'  className='bg-green-500 py-2 px-4 rounded-lg shadow-lg w-full' >
                 Save</button>
             </div>
           </div>
